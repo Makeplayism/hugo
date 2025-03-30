@@ -1,2 +1,4 @@
-# 4us
-rererere-init. for publii
+# hugo
+> rererere-init. by Hugo with decapcms in Cloudflare
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Makeplay.us in Blowfish</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content on Makeplay.us in Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</managingEditor>
+    <webMaster>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</webMaster>
+    <copyright>© 2025 Zoom.Quiet</copyright>
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
