@@ -1,5 +1,5 @@
 backend:
-  name: ZoomQuiet
+  name: github
   repo: Makeplayism/hugo
   branch: main # Branch to update (optional; defaults to master)
   base_url: https://www.makeplay.us
@@ -7,11 +7,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'post'
+    label: 'Post'
     folder: 'content/posts'
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
