@@ -9,7 +9,27 @@
     <managingEditor>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</managingEditor>
     <webMaster>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</webMaster>
     <copyright>© 2025 Zoom.Quiet</copyright>
-    <lastBuildDate>Sun, 30 Mar 2025 16:23:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Mar 2025 22:22:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Zoomquiet</title>
+      <link>http://localhost:1313/authors/zoomquiet/</link>
+      <pubDate>Mon, 31 Mar 2025 22:22:05 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/authors/zoomquiet/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 31 Mar 2025 22:10:02 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>My First Post</title>
@@ -17,6 +37,56 @@
       <pubDate>Sun, 30 Mar 2025 16:23:33 +0800</pubDate>
       <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>大妈的过去式测试</title>
+      <link>http://localhost:1313/posts/dama-past-demo/</link>
+      <pubDate>Mon, 01 Apr 1974 21:42:33 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/posts/dama-past-demo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Advanced</title>
+      <link>http://localhost:1313/tags/advanced/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/advanced/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tag</title>
+      <link>http://localhost:1313/tags/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>タグ</title>
+      <link>http://localhost:1313/tags/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>高度なタグ</title>
+      <link>http://localhost:1313/tags/advanced/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/advanced/_index.ja/</guid>
       <description></description>
       
     </item>

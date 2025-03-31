@@ -1,8 +1,13 @@
-+++
-date = '2025-03-30T16:23:33+08:00'
-draft = true
-title = 'My First Post'
-+++
+---
+date: '2025-03-30T16:23:33+08:00'
+draft: true
+title: 'My First Post'
+description: 快速测试发布姿势...
+categories: ["posts"]
+tags: ["LOG", "Chaos"]
+author: "Zoom.QUiet"
+
+---
 
 ## 体验 hugo 
 > 原生内容发布流程

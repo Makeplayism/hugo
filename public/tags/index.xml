@@ -1,15 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Makeplay.us in Blowfish</title>
+    <title>标签 on Makeplay.us in Blowfish</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Makeplay.us in Blowfish</description>
+    <description>Recent content in 标签 on Makeplay.us in Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <managingEditor>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</managingEditor>
     <webMaster>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</webMaster>
     <copyright>© 2025 Zoom.Quiet</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Mar 2025 22:10:02 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Historic</title>
+      <link>http://localhost:1313/tags/historic/</link>
+      <pubDate>Mon, 31 Mar 2025 22:10:02 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/historic/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LOG</title>
+      <link>http://localhost:1313/tags/log/</link>
+      <pubDate>Mon, 31 Mar 2025 22:10:02 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/log/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Chaos</title>
+      <link>http://localhost:1313/tags/chaos/</link>
+      <pubDate>Sun, 30 Mar 2025 16:23:33 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/chaos/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>高级</title>
+      <link>http://localhost:1313/tags/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/tags/advanced/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

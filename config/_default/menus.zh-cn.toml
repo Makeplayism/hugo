@@ -10,10 +10,53 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+
+
+
 [[main]]
-  name = "Blog"
+  name = "文章"
   pageRef = "posts"
   weight = 10
+
+[[main]]
+  name = "活动"
+  pageRef = "events"
+  weight = 20
+
+[[main]]
+  name = "项目"
+  pageRef = "projects"
+  weight = 30
+
+[[main]]
+  name = "关于"
+  pageRef = "pages"
+  weight = 40
+
+[[main]]
+  name = "作者"
+  pageRef = "authors"
+  parent = "关于"
+  weight = 10
+
+[[main]]
+  name = 'Git {{< icon-with-text "link" >}}'
+  parent = "关于"
+  url = "https://github.com/Makeplayism/hugo"
+  weight = 20
+
+[[main]]
+  name = 'Youtube {{< icon-with-text "link" >}}'
+  parent = "关于"
+  url = "https://www.youtube.com/@Chaos42DAMA"
+  weight = 30
+
+
+[[main]]
+  name = 'Twitter {{< icon-with-text "link" >}}'
+  parent = "关于"
+  url = "https://x.com/zoomq"
+  weight = 40
 
 #[[main]]
 #  name = "Parent"
@@ -42,15 +85,15 @@
 #  pageRef = "categories/awesome"
 #  weight = 20
 
-[[main]]
-  name = "Categories"
-  pageRef = "categories"
-  weight = 20
-
-[[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 30
+#[[main]]
+#  name = "Categories"
+#  pageRef = "categories"
+#  weight = 20
+#
+#[[main]]
+#  name = "Tags"
+#  pageRef = "tags"
+#  weight = 30
 
 
 # -- Footer Menu --
@@ -67,3 +110,13 @@
   name = "Categories"
   pageRef = "categories"
   weight = 20
+
+[[footer]]
+  name = "有关"
+  pageRef = "pages"
+  weight = 30
+
+[[footer]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 40

@@ -9,7 +9,7 @@
     <managingEditor>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</managingEditor>
     <webMaster>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</webMaster>
     <copyright>© 2025 Zoom.Quiet</copyright>
-    <lastBuildDate>Sun, 30 Mar 2025 16:23:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Mar 2025 22:07:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My First Post</title>
@@ -17,6 +17,16 @@
       <pubDate>Sun, 30 Mar 2025 16:23:33 +0800</pubDate>
       <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>大妈的过去式测试</title>
+      <link>http://localhost:1313/posts/dama-past-demo/</link>
+      <pubDate>Mon, 01 Apr 1974 21:42:33 +0800</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <guid>http://localhost:1313/posts/dama-past-demo/</guid>
       <description></description>
       
     </item>

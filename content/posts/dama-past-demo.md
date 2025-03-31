@@ -3,6 +3,10 @@ date: 1974-04-01T21:42:33+08:00
 draft: false
 title: 大妈的过去式测试
 description: 快速测试发布姿势...
+categories: ["posts"]
+tags: ["LOG", "Chaos"]
+author: "Zoom.QUiet"
+
 ---
 ## 发布到过去
 
