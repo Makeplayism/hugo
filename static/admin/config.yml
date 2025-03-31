@@ -7,11 +7,15 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'post'
-    label: 'Post'
+  - name: '文章'
+    label: Posts
+    label_singular: 'Posts'
     folder: 'content/posts'
+    path: "{{slug}}/index"
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
@@ -19,3 +23,36 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "关于"
+    label: Pages
+    label_singular: 'Pages'
+    folder: "content/pages"
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    # 指定上传文件放置到以 slug 命名的目录下
+    media_folder: '{{slug}}'
+    public_folder: '/pages/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: true }
+      - { label: "描述", name: "description", widget: "string" }
+      - { label: "摘要", name: "summary", widget: "text" }
+      - { label: '分类', name: 'categories', widget: 'list', allow_add: false, options: ["Post","Blog"] }
+      - { label: '标签', name: 'tags', widget: 'list', allow_add: true }
+      - { 
+          label: "封面图片", 
+          name: "cover", 
+          widget: "image", 
+          required: false,
+          media_library: {
+            config: {
+              multiple: false
+            }
+          },
+          pattern: ["^cover\\.(png|jpg|jpeg)$", "文件必须命名为 cover.png, cover.jpg 或 cover.jpeg"],
+        }
+      - { label: "正文", name: "body", widget: "markdown" }
