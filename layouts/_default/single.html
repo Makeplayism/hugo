@@ -167,11 +167,4 @@
     {{ end }}
   </footer>
 </article>
-
-{{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
-{{ if templates.Exists "partials/comments.html" }}
-{{ partial "comments.html" . }}
-{{ else }}
-{{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
-
 {{ end }}

@@ -35,8 +35,6 @@ smartTOCHideUnfocusedChildren = false
 
 favicon = "/img/favicon.ico"
 
-# 250401 ++for utteranc.es /layouts/_default/single.html
-showComments = true
 
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
@@ -92,6 +90,8 @@ showComments = true
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   sharingLinks = [ "linkedin", "twitter", "facebook", "email", "telegram"]
   showZenMode = true
+  # 250401 ++for utteranc.es /layouts/_default/single.html
+  showComments = true
 
 [list]
   showHero = true
