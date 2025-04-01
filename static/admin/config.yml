@@ -32,10 +32,18 @@ collections:
           pattern: "❗格式错误：只能包含小写字母、数字、横线，且至少8个字符"
       - { label: '标题', name: 'title', widget: 'string',required: true }
       - { label: '发布日期', name: 'date', widget: 'datetime' ,required: true}
-      - { label: "草稿?", name: "draft", widget: "boolean",required: true, default: true }
+      - { label: "草稿?", name: "draft", widget: "boolean",default: true}
       - { label: "描述", name: "description", widget: "string",required: true }
       - { label: "摘要", name: "summary", widget: "text" }
-      - { label: '分类', name: 'categories', widget: 'list', allow_add: false, options: ["Post","Blog"] }
+      - { 
+        label: '分类', 
+        name: 'categories', 
+        widget: 'select', 
+        multiple: false,
+        default: ["Post"],
+        options: ["Post","Blog"],
+        hint: '内容类型',
+        }
       - { label: '标签', name: 'tags', widget: 'list', allow_add: true }
       - { label: '显示作者?', name: 'showAuthor', widget: 'boolean', default: false }
       - {
@@ -51,7 +59,6 @@ collections:
           label: "封面图片", 
           name: "cover", 
           widget: "image", 
-          required: false,
           media_library: {
             config: {
               multiple: false
@@ -85,11 +92,19 @@ collections:
           pattern: "❗格式错误：只能包含小写字母、数字、横线，且至少8个字符"
       - { label: "标题", name: "title", widget: "string",required: true }
       - { label: "发布日期", name: "date", widget: "datetime",required: true }
-      - { label: "草稿", name: "draft", widget: "boolean",required: true, default: true }
+      - { label: "草稿", name: "draft", widget: "boolean",default: true }
       - { label: "描述", name: "description", widget: "string",required: true }
       - { label: "摘要", name: "summary", widget: "text" }
-      - { label: '分类', name: 'categories', widget: 'list', allow_add: false, options: ["Post","Blog"] }
-      - { label: '标签', name: 'tags', widget: 'list', allow_add: true }
+      - { 
+        label: '分类', 
+        name: 'categories', 
+        widget: 'select', 
+        multiple: false,
+        default: ["LOG"],
+        options: ["LOG","ANN","DOC"],
+        hint: '内容类型',
+        }
+      - { label: '标签', name: 'tags', widget: 'list', allow_add: true , hint: '内容要点',}
       - { label: '显示作者?', name: 'showAuthor', widget: 'boolean', default: false }
       - {
           label: '作者',
