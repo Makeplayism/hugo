@@ -14,6 +14,7 @@ enableCodeCopy = false
 
 replyByEmail = false
 
+mainSections = ["posts","events","projects"]
 # mainSections = ["section1", "section2"]
 # robots = ""
 
@@ -52,10 +53,10 @@ favicon = "/img/favicon.ico"
   showRecent = true
   showRecentItems = 3
   showMoreLink = true
-  showMoreLinkDest = "/events/"
+  showMoreLinkDest = "/events"
   #showMoreLinkDest = "posts"
-  cardView = false
-  cardViewScreenWidth = false
+  cardView = true
+  cardViewScreenWidth = true
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
