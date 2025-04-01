@@ -155,19 +155,19 @@ collections:
     label_singular: 'Events'
     folder: "content/events"
     create: true
-    path: "{{fields.slug}}/index.md" # 目录下的文件
-    media_folder: '{{fields.slug}}'
-    public_folder: '/events/{{fields.slug}}'
+    path: "{{slug}}/index.md" # 目录下的文件
+    media_folder: '{{slug}}'
+    public_folder: '/events/{{slug}}'
     editor:
       preview: false
     fields:
-      - *slug_field
+      #- *slug_field
       - *title_field
       - *date_field
       - *draft_field
       - *description_field
-      - *summary_field
-      - *cover_field
+      #- *summary_field
+      #- *cover_field
       - *showauthor_field
       - *authors_field
       - *tags_field
