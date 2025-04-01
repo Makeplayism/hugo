@@ -92,8 +92,8 @@ collections:
     create: true
     path: "{{fields.slug}}/index.md"
     slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
-    media_folder: ''
-    public_folder: ''
+    media_folder: '{{fields.slug}}'
+    public_folder: '/posts/{{fields.slug}}'
     editor:
       preview: false
     fields:
@@ -155,9 +155,9 @@ collections:
     label_singular: 'Events'
     folder: "content/events"
     create: true
-    path: "/{{fields.slug}}/index"
-    media_folder: ''
-    public_folder: ''
+    path: "{{fields.slug}}/index.md" # 目录下的文件
+    media_folder: '{{fields.slug}}'
+    public_folder: '/events/{{fields.slug}}'
     editor:
       preview: false
     fields:
@@ -219,9 +219,9 @@ collections:
     label_singular: 'Authors'
     folder: "content/authors"
     create: true
-    path: "{{slug}}/index.md"
-    media_folder: ''
-    public_folder: ''
+    path: "{{fields.slug}}/index.md"
+    media_folder: '{{fields.slug}}'
+    public_folder: '/authors/{{fields.slug}}'
     editor:
       preview: false
     fields:
