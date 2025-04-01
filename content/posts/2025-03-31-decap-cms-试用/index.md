@@ -2,11 +2,10 @@
 slug: decap-cm-feeling
 title: Decap CMS 试用
 date: 2025-03-31T16:39:59.979Z
-draft: true
+draft: false
 description: 一种神奇的融合体验..
 summary: ...TBD
-categories:
-  - LOG
+categories: Blog
 tags:
   - dama
   - devops
