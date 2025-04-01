@@ -109,7 +109,6 @@ collections:
       - *cover_field
       - *showauthor_field
       - *authors_field
-      - *body_field
       - *tags_field
       - { 
         label: '分类', 
@@ -142,7 +141,6 @@ collections:
       - *cover_field
       - *showauthor_field
       - *authors_field
-      - *body_field
       - *tags_field
       - { 
         label: '分类', 
@@ -175,7 +173,6 @@ collections:
       - *cover_field
       - *showauthor_field
       - *authors_field
-      - *body_field
       - *tags_field
       - { 
         label: '分类', 
@@ -208,7 +205,6 @@ collections:
       - *cover_field
       - *showauthor_field
       - *authors_field
-      - *body_field
       - *tags_field
       - { 
         label: '分类', 
@@ -241,7 +237,6 @@ collections:
       - *cover_field
       - *showauthor_field
       - *authors_field
-      - *body_field
       - *tags_field
       - { 
         label: '分类', 
