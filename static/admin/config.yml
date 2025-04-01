@@ -155,6 +155,7 @@ collections:
     label_singular: 'Events'
     folder: "content/events"
     create: true
+    identifier_field: slug  # ⚠️ 关键新增配置：强制用 slug 生成目录名
     path: "{{slug}}/_index"
     media_folder: ''
     public_folder: ''
