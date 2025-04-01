@@ -1,7 +1,19 @@
 ---
+slug: decap-cm-feeling
 title: Decap CMS 试用
 date: 2025-03-31T16:39:59.979Z
+draft: true
 description: 一种神奇的融合体验..
+summary: ...TBD
+categories:
+  - LOG
+tags:
+  - dama
+  - devops
+showAuthor: true
+authors:
+  - zoomquiet
+cover: cover.webp
 ---
 原先概念是 CMS 肯定得有后台系统和数据库哪..
 
