@@ -90,6 +90,7 @@ collections:
     label_singular: '文章'
     folder: 'content/posts'
     create: true
+    identifier_field: slug  # ⚠️ 关键新增配置：强制用 slug 生成目录名
     path: "{{slug}}/index.md"
     #slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     media_folder: ''
@@ -123,6 +124,7 @@ collections:
     label_singular: 'Pages'
     folder: "content/pages"
     create: true
+    identifier_field: slug  # ⚠️ 关键新增配置：强制用 slug 生成目录名
     path: "{{slug}}/index.md"
     media_folder: ''
     public_folder: ''
@@ -188,6 +190,7 @@ collections:
     label_singular: 'Projects'
     folder: "content/projects"
     create: true
+    identifier_field: slug  # ⚠️ 关键新增配置：强制用 slug 生成目录名
     path: "{{slug}}/index.md"
     media_folder: ''
     public_folder: ''
@@ -220,17 +223,19 @@ collections:
     label_singular: 'Authors'
     folder: "content/authors"
     create: true
+    identifier_field: slug  # ⚠️ 关键新增配置：强制用 slug 生成目录名
     path: "{{slug}}/index.md"
     media_folder: '{{slug}}'
     public_folder: '/authors/{{slug}}'
     editor:
       preview: false
     fields:
+      - *slug_field
       - *title_field
       - *date_field
       - *draft_field
-      - *description_field
-      - *summary_field
+      #- *description_field
+      #- *summary_field
       - *cover_field
       - *showauthor_field
       - *authors_field
