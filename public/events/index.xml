@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Events on Makeplay.us in Blowfish</title>
+    <title>活动/事件/.. on Makeplay.us in Blowfish</title>
     <link>http://localhost:1313/events/</link>
-    <description>Recent content in Events on Makeplay.us in Blowfish</description>
+    <description>Recent content in 活动/事件/.. on Makeplay.us in Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <managingEditor>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</managingEditor>
-    <webMaster>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</webMaster>
-    <copyright>© 2025 Zoom.Quiet</copyright>
-    <lastBuildDate>Mon, 31 Mar 2025 22:07:17 +0800</lastBuildDate><atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</managingEditor>
+    <webMaster>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</webMaster>
+    <copyright>© 2025 FutureMakerHub</copyright>
+    <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

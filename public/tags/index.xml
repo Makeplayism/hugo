@@ -6,16 +6,36 @@
     <description>Recent content in 标签 on Makeplay.us in Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <managingEditor>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</managingEditor>
-    <webMaster>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</webMaster>
-    <copyright>© 2025 Zoom.Quiet</copyright>
-    <lastBuildDate>Mon, 31 Mar 2025 22:10:02 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</managingEditor>
+    <webMaster>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</webMaster>
+    <copyright>© 2025 FutureMakerHub</copyright>
+    <lastBuildDate>Mon, 31 Mar 2025 16:39:59 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dama</title>
+      <link>http://localhost:1313/tags/dama/</link>
+      <pubDate>Mon, 31 Mar 2025 16:39:59 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</author>
+      <guid>http://localhost:1313/tags/dama/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Mon, 31 Mar 2025 16:39:59 +0000</pubDate>
+      <author>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</author>
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Historic</title>
       <link>http://localhost:1313/tags/historic/</link>
       <pubDate>Mon, 31 Mar 2025 22:10:02 +0800</pubDate>
-      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <author>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</author>
       <guid>http://localhost:1313/tags/historic/</guid>
       <description></description>
       
@@ -25,7 +45,7 @@
       <title>LOG</title>
       <link>http://localhost:1313/tags/log/</link>
       <pubDate>Mon, 31 Mar 2025 22:10:02 +0800</pubDate>
-      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <author>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</author>
       <guid>http://localhost:1313/tags/log/</guid>
       <description></description>
       
@@ -35,7 +55,7 @@
       <title>Chaos</title>
       <link>http://localhost:1313/tags/chaos/</link>
       <pubDate>Sun, 30 Mar 2025 16:23:33 +0800</pubDate>
-      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <author>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</author>
       <guid>http://localhost:1313/tags/chaos/</guid>
       <description></description>
       
@@ -45,7 +65,7 @@
       <title>高级</title>
       <link>http://localhost:1313/tags/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>zquiet&#43;fmhub@gmail.com (Zoom.Quiet)</author>
+      <author>zquiet&#43;fmhub@gmail.com (FutureMakerHub)</author>
       <guid>http://localhost:1313/tags/advanced/</guid>
       <description></description>
       
