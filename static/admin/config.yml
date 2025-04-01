@@ -124,8 +124,8 @@ collections:
     folder: "content/pages"
     create: true
     path: "{{slug}}/index.md"
-    media_folder: '{{slug}}'
-    public_folder: '/pages/{{slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
@@ -156,8 +156,8 @@ collections:
     folder: "content/events"
     create: true
     path: "{{slug}}/index.md"
-    media_folder: '{{slug}}'
-    public_folder: '/events/{{slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
@@ -188,8 +188,8 @@ collections:
     folder: "content/projects"
     create: true
     path: "{{slug}}/index.md"
-    media_folder: '{{slug}}'
-    public_folder: '/projects/{{slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
