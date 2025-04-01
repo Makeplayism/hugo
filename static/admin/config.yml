@@ -52,6 +52,13 @@ common_fields: &common_fields
           hint: "必须是 cover.png|jpg|webp",
           pattern: ["^cover\\.(png|jpg|jpeg|webp)$", "文件必须命名为 cover.png/cover.jpg 最好是 cover.webp"],
         }
+      - { 
+        label: '标签', 
+        name: 'tags', 
+        widget: 'list', 
+        allow_add: true,
+        hint: '内容要点, 例如：Hugo, DecapCMS, Markdown',
+        }
 
 backend:
   name: github
@@ -82,14 +89,8 @@ collections:
         multiple: false,
         default: ["Post"],
         options: ["Post","Blog"],
-        hint: '内容类型',
-        }
-      - { 
-        label: '标签', 
-        name: 'tags', 
-        widget: 'list', 
         allow_add: true,
-        hint: '内容要点, 例如：Hugo, DecapCMS, Markdown',
+        hint: '内容类型',
         }
       - { label: "正文", name: "body", widget: "markdown" }
   - name: 'Pages'
@@ -111,13 +112,76 @@ collections:
         multiple: false,
         default: ["LOG"],
         options: ["LOG","ANN","DOC"],
+        allow_add: true,
         hint: '内容类型',
         }
+      - { label: "正文", name: "body", widget: "markdown" }
+  - name: 'Events'
+    label: "活动"
+    label_singular: 'Events'
+    folder: "content/events"
+    create: true
+    path: "{{fields.slug}}/index"
+    media_folder: '{{fields.slug}}'
+    public_folder: '/events/{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - <<: *common_fields
       - { 
-        label: '标签', 
-        name: 'tags', 
-        widget: 'list', 
+        label: '分类', 
+        name: 'categories', 
+        widget: 'select', 
+        multiple: false,
+        default: ["LOCAL"],
+        options: ["LOCAL","ONLINE","MOVIE","DISCUSSION","BUILDING","MAKING","READING"],
         allow_add: true,
-        hint: '内容要点, 例如：Hugo, DecapCMS, Markdown',
+        hint: '内容类型',
+        }
+      - { label: "正文", name: "body", widget: "markdown" }
+  - name: 'Projects'
+    label: "项目"
+    label_singular: 'Projects'
+    folder: "content/projects"
+    create: true
+    path: "{{fields.slug}}/index"
+    media_folder: '{{fields.slug}}'
+    public_folder: '/projects/{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - <<: *common_fields
+      - { 
+        label: '分类', 
+        name: 'categories', 
+        widget: 'select', 
+        multiple: false,
+        default: ["LOCAL"],
+        options: ["LOCAL","ONLINE","MOVIE","DISCUSSION","BUILDING","MAKING","READING"],
+        allow_add: true,
+        hint: '项目类型',
+        }
+      - { label: "正文", name: "body", widget: "markdown" }
+  - name: 'Authors'
+    label: "作者"
+    label_singular: 'Authors'
+    folder: "content/authors"
+    create: true
+    path: "{{fields.slug}}/index"
+    media_folder: '{{fields.slug}}'
+    public_folder: '/authors/{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - <<: *common_fields
+      - { 
+        label: '分类', 
+        name: 'categories', 
+        widget: 'select', 
+        multiple: false,
+        default: ["MAKER"],
+        options: ["MAKER","GEEK","NERD","SEEKER","THINKER","WRITER","READER","DOGE","CATS","FISH","BIRD"],
+        allow_add: true,
+        hint: '人物类型',
         }
       - { label: "正文", name: "body", widget: "markdown" }
