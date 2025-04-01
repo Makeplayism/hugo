@@ -28,14 +28,13 @@ draft_field: &draft_field
   label: "草稿?"
   name: "draft"
   widget: "boolean"
-  required: true
   default: true
+  required: true
 
 description_field: &description_field
   label: "描述"
   name: "description"
   widget: "string"
-  required: true
 
 summary_field: &summary_field
   label: "摘要"
@@ -46,7 +45,6 @@ cover_field: &cover_field
   label: "封面图片"
   name: "cover"
   widget: "image"
-  required: false
   media_library:
     config:
       multiple: false
@@ -77,7 +75,6 @@ tags_field: &tags_field
   widget: "list"
   allow_add: true
   hint: '内容要点, 例如：Hugo, DecapCMS, Markdown'
-
 
 backend:
   name: github
@@ -159,8 +156,8 @@ collections:
     folder: "content/events"
     create: true
     path: "{{fields.slug}}/index"
-    media_folder: '{{fields.slug}}'
-    public_folder: '/events/{{fields.slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
