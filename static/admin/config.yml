@@ -222,13 +222,12 @@ collections:
     label_singular: 'Authors'
     folder: "content/authors"
     create: true
-    path: "{{fields.slug}}/index"
-    media_folder: '{{fields.slug}}'
-    public_folder: '/authors/{{fields.slug}}'
+    path: "{{slug}}/index"
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
-      - *slug_field
       - *title_field
       - *date_field
       - *draft_field
