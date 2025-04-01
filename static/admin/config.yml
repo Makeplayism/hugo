@@ -71,11 +71,6 @@ authors_field: &authors_field
   options: ["fmclub", "zoomquiet"]
   hint: '联系大妈配置更多作者'
 
-body_field: &body_field
-  label: "正文"
-  name: "body"
-  widget: "markdown"
-
 tags_field: &tags_field
   label: "标签"
   name: "tags"
