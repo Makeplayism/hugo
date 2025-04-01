@@ -1,6 +1,6 @@
 # 定义通用字段作为单独的条目
 slug_field: &slug_field
-  label: "URL标识符"
+  label: "URL永久链接标识符"
   name: "slug"
   widget: "string"
   required: true

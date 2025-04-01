@@ -8,14 +8,17 @@ baseURL = "https://www.makeplay.us/"
 #defaultContentLanguage = "en"
 defaultContentLanguage = "zh-cn"
 #languageCode = "zh-CN"
+languageName = "简体中文"
+weight = 1
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
-summaryLength = 0
+summaryLength = 75
+hasCJKLanguage = true  # 字數統計才會對
 
 buildDrafts = false
-buildFuture = false
+buildFuture = true
 
 enableEmoji = true
 
@@ -26,7 +29,7 @@ enableEmoji = true
 #  pagerSize = 100
 
 [imaging]
-  anchor = 'Center'
+  anchor = 'Smart'
 
 [taxonomies]
   tag = "tags"
@@ -71,3 +74,13 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[permalinks]
+  events = "/events/:slug/"
+#  posts = '/posts/:slug/'
+#  projects = "/projects/:slug/"
+#  pages = "/pages/:slug/"
+#  authors = "/authors/:slug/"
+#  notes = '/posts/:filename/'
+#  jottings = '/posts/:filename/'
+#  timeline = '/posts/timeline/:filename/'

@@ -91,7 +91,7 @@ favicon = "/img/favicon.ico"
   sharingLinks = [ "linkedin", "twitter", "facebook", "email", "telegram"]
   showZenMode = true
   # 250401 ++for utteranc.es /layouts/_default/single.html
-  #showComments = true
+  showComments = true
 
 [list]
   showHero = true
