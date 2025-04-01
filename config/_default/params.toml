@@ -35,6 +35,9 @@ smartTOCHideUnfocusedChildren = false
 
 favicon = "/img/favicon.ico"
 
+# 250401 ++for utteranc.es /layouts/_default/single.html
+showComments = true
+
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
