@@ -155,7 +155,7 @@ collections:
     label_singular: 'Events'
     folder: "content/events"
     create: true
-    path: "{{fields.slug}}/index"
+    path: "{{slug}}/_index"
     media_folder: ''
     public_folder: ''
     editor:
