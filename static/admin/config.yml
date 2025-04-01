@@ -92,8 +92,8 @@ collections:
     create: true
     path: "{{slug}}/index.md"
     #slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    media_folder: '{{slug}}'
-    public_folder: '/posts/{{slug}}'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
