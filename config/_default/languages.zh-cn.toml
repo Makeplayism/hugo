@@ -29,14 +29,15 @@ links = [
   { ko-fi = "https://ko-fi.com/zoomquiet" },
 #  { blogger = "https://username.blogspot.com/" },
   { blogger = "https://zoomquiet.io/" },
-  { facebook = "https://www.facebook.com/zoom.quiet" },
+#  { facebook = "https://www.facebook.com/zoom.quiet" },
   { github = "https://github.com/ZoomQuiet" },
-  { gitlab = "https://gitlab.com/ZoomQuiet" },
+#  { gitlab = "https://gitlab.com/ZoomQuiet" },
   { instagram = "https://instagram.com/zoom.quiet" },
 #  { linkedin = "https://linkedin.com/in/username" },
 #  { patreon = "https://www.patreon.com/username" },
   { telegram = "https://t.me/chaos42dama" },
-  { follow = "https://app.follow.is/share/users/zoomquiet" },
+#  { follow = "https://app.follow.is/share/users/zoomquiet" },
+  { link = "https://space.bilibili.com/370446051" },
 ]
 # [params.author]
 #   name = "Your name here"

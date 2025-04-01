@@ -1,0 +1,17 @@
+{
+    "name": "大妈/ZoomQuiet",
+    "image" : "img/DAMA2022.png",
+    "bio": "Chaos42Creator",
+    "social": [
+        { "email" : "mailto:zquiet+fmhub@gmail.com" },
+        { "twitter" : "https://twitter.com/zoomq" },
+        { "youtube" : "https://youtube.com/Chaos42DAMA" },
+        { "ko-fi": "https://ko-fi.com/zoomquiet" },
+        { "blogger" : "https://zoomquiet.io/" },
+        { "github" : "https://github.com/ZoomQuiet" },
+        { "instagram" : "https://instagram.com/zoom.quiet" },
+        { "telegram" : "https://t.me/chaos42dama" },
+        { "link" : "https://space.bilibili.com/370446051" }
+
+    ]
+}

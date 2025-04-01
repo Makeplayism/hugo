@@ -7,44 +7,99 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: '文章'
-    label: Posts
-    label_singular: 'Posts'
+  - name: 'Posts'
+    label: '文章'
+    label_singular: '文章'
     folder: 'content/posts'
-    path: "{{slug}}/index"
-    identifier_field: slug
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    path: "{{fields.slug}}/index"
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     media_folder: ''
     public_folder: ''
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: "关于"
-    label: Pages
-    label_singular: 'Pages'
-    folder: "content/pages"
-    path: "{{slug}}/index"
-    identifier_field: slug
-    create: true
-    slug: "{{slug}}"
-    # 指定上传文件放置到以 slug 命名的目录下
-    media_folder: '{{slug}}'
-    public_folder: '/pages/{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: "标题", name: "title", widget: "string" }
-      - { label: "发布日期", name: "date", widget: "datetime" }
-      - { label: "草稿", name: "draft", widget: "boolean", default: true }
-      - { label: "描述", name: "description", widget: "string" }
+      - label: "URL标识符"
+        name: "slug"
+        widget: "string"
+        required: true
+        hint: "示例：how-to-use-decap-cms (至少8个字符)"
+        pattern: 
+          - "^[a-z0-9-]{8,}$"
+          - "必须满足：1) 只含:全小写英文/数字/横线 2) 至少8个字符"
+        error_messages:
+          required: "❗必须填写URL永久链接标识符"
+          pattern: "❗格式错误：只能包含小写字母、数字、横线，且至少8个字符"
+      - { label: '标题', name: 'title', widget: 'string',required: true }
+      - { label: '发布日期', name: 'date', widget: 'datetime' ,required: true}
+      - { label: "草稿?", name: "draft", widget: "boolean",required: true, default: true }
+      - { label: "描述", name: "description", widget: "string",required: true }
       - { label: "摘要", name: "summary", widget: "text" }
       - { label: '分类', name: 'categories', widget: 'list', allow_add: false, options: ["Post","Blog"] }
       - { label: '标签', name: 'tags', widget: 'list', allow_add: true }
+      - { label: '显示作者?', name: 'showAuthor', widget: 'boolean', default: false }
+      - {
+          label: '作者',
+          name: 'authors',
+          widget: 'select',
+          multiple: true,
+          default: ["fmclub"],
+          options: ["fmclub", "zoomquiet"],
+          hint: '可添加多个作者',
+        }
+      - { 
+          label: "封面图片", 
+          name: "cover", 
+          widget: "image", 
+          required: false,
+          media_library: {
+            config: {
+              multiple: false
+            }
+          },
+          pattern: ["^cover\\.(png|jpg|jpeg|webp)$", "文件必须命名为 cover.png/cover.jpg 最好是 cover.webp"],
+        }
+      - { label: "正文", name: "body", widget: "markdown" }
+  - name: 'Pages'
+    label: "关于"
+    label_singular: 'Pages'
+    folder: "content/pages"
+    create: true
+    path: "{{fields.slug}}/index"
+    # 指定上传文件放置到以 slug 命名的目录下
+    media_folder: '{{fields.slug}}'
+    public_folder: '/pages/{{fields.slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: "URL标识符"
+        name: "slug"
+        widget: "string"
+        required: true
+        hint: "示例：how-to-use-decap-cms (至少8个字符)"
+        pattern: 
+          - "^[a-z0-9-]{8,}$"
+          - "必须满足：1) 只含:全小写英文/数字/横线 2) 至少8个字符"
+        error_messages:
+          required: "❗必须填写URL永久链接标识符"
+          pattern: "❗格式错误：只能包含小写字母、数字、横线，且至少8个字符"
+      - { label: "标题", name: "title", widget: "string",required: true }
+      - { label: "发布日期", name: "date", widget: "datetime",required: true }
+      - { label: "草稿", name: "draft", widget: "boolean",required: true, default: true }
+      - { label: "描述", name: "description", widget: "string",required: true }
+      - { label: "摘要", name: "summary", widget: "text" }
+      - { label: '分类', name: 'categories', widget: 'list', allow_add: false, options: ["Post","Blog"] }
+      - { label: '标签', name: 'tags', widget: 'list', allow_add: true }
+      - { label: '显示作者?', name: 'showAuthor', widget: 'boolean', default: false }
+      - {
+          label: '作者',
+          name: 'authors',
+          widget: 'select',
+          multiple: true,
+          default: ["fmclub"],
+          options: ["fmclub", "zoomquiet"],
+          hint: '可添加多个作者',
+        }
       - { 
           label: "封面图片", 
           name: "cover", 
