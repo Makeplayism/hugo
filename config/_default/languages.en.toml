@@ -16,15 +16,19 @@ title = "Makeplay.us in Blowfish"
 
 
 [params.author]
-name = "Zoom.Quiet"
-image = "img/DAMA2022.png"
-headline = "Chaos42DAMA,Sci-Fi,AI,Reader,Code"
-bio = "Time is unimportant, only life important.."
+name = "FMHub"
+image = "img/FMHub_full.png.webp"
+headline = "Maker,Futurology,Makeplayism.."
+bio = "Keep making,Keep funny.."
 email = "zquiet+fmhub@gmail.com"
 links = [
+#  { email = "mailto:zquiet+fmhub@gmail.com" },
   { twitter = "https://twitter.com/zoomq" },
-  { ko-fi = "https://ko-fi.com/zoomquiet" },
+  { youtube = "https://youtube.com/Chaos42DAMA" },
+  { github = "https://github.com/Makeplayism" },
+  { telegram = "https://t.me/chaos42dama" },
 ]
+
 # [params.author]
 #   name = "Your name here"
 #   email = "youremail@example.com"

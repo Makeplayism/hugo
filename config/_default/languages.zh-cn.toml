@@ -15,30 +15,37 @@ title = "Makeplay.us in Blowfish"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-
 [params.author]
-name = "Zoom.Quiet"
-image = "img/DAMA2022.png"
-headline = "Chaos42DAMA,Sci-Fi,AI,Reader,Code"
-bio = "Time is unimportant, only life important.."
+name = "FutureMakerHub"
+image = "img/FMHub_full.png.webp"
+headline = "Maker,Futurology,Makeplayism.."
+bio = "Keep making,Keep funny.."
 email = "zquiet+fmhub@gmail.com"
 links = [
-  { email = "mailto:zquiet+fmhub@gmail.com" },
+#  { email = "mailto:zquiet+fmhub@gmail.com" },
   { twitter = "https://twitter.com/zoomq" },
   { youtube = "https://youtube.com/Chaos42DAMA" },
-  { ko-fi = "https://ko-fi.com/zoomquiet" },
-#  { blogger = "https://username.blogspot.com/" },
-  { blogger = "https://zoomquiet.io/" },
-#  { facebook = "https://www.facebook.com/zoom.quiet" },
-  { github = "https://github.com/ZoomQuiet" },
-#  { gitlab = "https://gitlab.com/ZoomQuiet" },
-  { instagram = "https://instagram.com/zoom.quiet" },
-#  { linkedin = "https://linkedin.com/in/username" },
-#  { patreon = "https://www.patreon.com/username" },
+  { github = "https://github.com/Makeplayism" },
   { telegram = "https://t.me/chaos42dama" },
-#  { follow = "https://app.follow.is/share/users/zoomquiet" },
-  { link = "https://space.bilibili.com/370446051" },
 ]
+
+#[params.author]
+#name = "Zoom.Quiet"
+#image = "img/DAMA2022.png"
+#headline = "Chaos42DAMA,Sci-Fi,AI,Reader,Code"
+#bio = "Time is unimportant, only life important.."
+#email = "zquiet+fmhub@gmail.com"
+#links = [
+#  { email = "mailto:zquiet+fmhub@gmail.com" },
+#  { twitter = "https://twitter.com/zoomq" },
+#  { youtube = "https://youtube.com/Chaos42DAMA" },
+#  { ko-fi = "https://ko-fi.com/zoomquiet" },
+#  { blogger = "https://zoomquiet.io/" },
+#  { github = "https://github.com/ZoomQuiet" },
+#  { instagram = "https://instagram.com/zoom.quiet" },
+#  { telegram = "https://t.me/chaos42dama" },
+#  { link = "https://space.bilibili.com/370446051" },
+#]
 # [params.author]
 #   name = "Your name here"
 #   email = "youremail@example.com"
