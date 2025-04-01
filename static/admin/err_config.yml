@@ -1,88 +1,70 @@
-# 定义通用字段作为单独的条目
-slug_field: &slug_field
-  label: "URL标识符"
-  name: "slug"
-  widget: "string"
-  required: true
-  hint: "示例：how-to-use-decap-cms (至少8个字符)"
-  pattern: 
-    - "^[a-z0-9-]{8,}$"
-    - "必须满足：1) 只含:全小写英文/数字/横线 2) 至少8个字符"
-  error_messages:
-    required: "❗必须填写URL永久链接标识符"
-    pattern: "❗格式错误：只能包含小写字母、数字、横线，且至少8个字符"
-
-title_field: &title_field
-  label: '标题'
-  name: 'title'
-  widget: 'string'
-  required: true
-
-date_field: &date_field
-  label: '发布日期'
-  name: 'date'
-  widget: 'datetime'
-  required: true
-
-draft_field: &draft_field
-  label: "草稿?"
-  name: "draft"
-  widget: "boolean"
-  required: true
-  default: true
-
-description_field: &description_field
-  label: "描述"
-  name: "description"
-  widget: "string"
-  required: true
 
 summary_field: &summary_field
   label: "摘要"
   name: "summary"
   widget: "text"
 
-cover_field: &cover_field
-  label: "封面图片"
-  name: "cover"
-  widget: "image"
-  required: false
-  media_library:
-    config:
-      multiple: false
-  hint: "必须是 cover.png|jpg|webp"
-  pattern: ["^cover\\.(png|jpg|jpeg|webp)$", "文件必须命名为 cover.png/cover.jpg 最好是 cover.webp"]
-  error_messages:
-    pattern: "❗文件必须命名为 cover.png/cover.jpg 最好是 cover.webp"
-
-showauthor_field: &showauthor_field
-  label: '显示作者?'
-  name: 'showAuthor'
-  widget: 'boolean'
-  default: true
-  hint: '是否显示作者信息'
-
-authors_field: &authors_field
-  label: '作者'
-  name: 'authors'
-  widget: 'select'
-  multiple: true
-  default: ["fmclub"]
-  options: ["fmclub", "zoomquiet"]
-  hint: '联系大妈配置更多作者'
-
-body_field: &body_field
-  label: "正文"
-  name: "body"
-  widget: "markdown"
-
-tags_field: &tags_field
-  label: "标签"
-  name: "tags"
-  widget: "list"
-  allow_add: true
-  hint: '内容要点, 例如：Hugo, DecapCMS, Markdown'
-
+common_fields: &common_fields
+  - label: "URL标识符"
+    name: "slug"
+    widget: "string"
+    required: true
+    hint: "示例：how-to-use-decap-cms (至少7个字符)"
+    pattern: 
+      - "^[a-z0-9-]{8,}$"
+      - "必须满足：1) 只含:全小写英文/数字/横线 2) 至少8个字符"
+    error_messages:
+      required: "❗必须填写URL永久链接标识符"
+      pattern: "❗格式错误：只能包含小写字母、数字、横线，且至少8个字符"
+  - {
+    label: '标题',
+    name: 'title',
+    widget: 'string',
+    required: true,
+    }
+  - {
+    label: '发布日期',
+    name: 'date',
+    widget: 'datetime',
+    required: true,
+    }
+  - {
+    label: '描述',
+    name: 'description',
+    widget: 'description',
+    required: true,
+    }
+  - { label: "草稿?", name: "draft", widget: "boolean",default: true, hint: "草稿状态的文章不会被公开.." }
+  - { label: "摘要", name: "summary", widget: "text" }
+  - { label: '显示作者?', name: 'showAuthor', widget: 'boolean', default: true }
+  - {
+      label: '作者',
+      name: 'authors',
+      widget: 'select',
+      multiple: true,
+      default: ["fmclub"],
+      options: ["fmclub", "zoomquiet"],
+      hint: '联系大妈配置更多作者',
+    }
+  - { 
+      label: "封面图片", 
+      name: "cover", 
+      widget: "image", 
+      media_library: {
+        config: {
+          multiple: false
+        }
+      },
+      hint: "必须是 cover.png|jpg|webp",
+      pattern: ["^cover\\.(png|jpg|jpeg|webp)$", "文件必须命名为 cover.png/cover.jpg 最好是 cover.webp"],
+    }
+  - { 
+    label: '标签', 
+    name: 'tags', 
+    widget: 'list', 
+    allow_add: true,
+    hint: '内容要点, 例如：Hugo, DecapCMS, Markdown',
+    }
 
 backend:
   name: github
@@ -105,17 +87,7 @@ collections:
     editor:
       preview: false
     fields:
-      - *url_field
-      - *slug_field
-      - *title_field
-      - *date_field
-      - *draft_field
-      - *description_field
-      - *summary_field
-      - *cover_field
-      - *showauthor_field
-      - *authors_field
-      - *tags_field
+      *common_fields
       - { 
         label: '分类', 
         name: 'categories', 
@@ -138,17 +110,7 @@ collections:
     editor:
       preview: false
     fields:
-      - *url_field
-      - *slug_field
-      - *title_field
-      - *date_field
-      - *draft_field
-      - *description_field
-      - *summary_field
-      - *cover_field
-      - *showauthor_field
-      - *authors_field
-      - *tags_field
+      *common_fields
       - { 
         label: '分类', 
         name: 'categories', 
@@ -171,17 +133,7 @@ collections:
     editor:
       preview: false
     fields:
-      - *url_field
-      - *slug_field
-      - *title_field
-      - *date_field
-      - *draft_field
-      - *description_field
-      - *summary_field
-      - *cover_field
-      - *showauthor_field
-      - *authors_field
-      - *tags_field
+      *common_fields
       - { 
         label: '分类', 
         name: 'categories', 
@@ -204,17 +156,7 @@ collections:
     editor:
       preview: false
     fields:
-      - *url_field
-      - *slug_field
-      - *title_field
-      - *date_field
-      - *draft_field
-      - *description_field
-      - *summary_field
-      - *cover_field
-      - *showauthor_field
-      - *authors_field
-      - *tags_field
+      *common_fields
       - { 
         label: '分类', 
         name: 'categories', 
@@ -237,17 +179,7 @@ collections:
     editor:
       preview: false
     fields:
-      - *url_field
-      - *slug_field
-      - *title_field
-      - *date_field
-      - *draft_field
-      - *description_field
-      - *summary_field
-      - *cover_field
-      - *showauthor_field
-      - *authors_field
-      - *tags_field
+      *common_fields
       - { 
         label: '分类', 
         name: 'categories', 
@@ -259,5 +191,3 @@ collections:
         hint: '人物类型',
         }
       - { label: "正文", name: "body", widget: "markdown" }
-
-
