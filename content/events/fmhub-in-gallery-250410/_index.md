@@ -11,4 +11,4 @@ authors:
   - fmclub
 categories: LOCAL
 ---
-美术馆中的未来学会..
+![](fmhub-250410.jpg.webp)
