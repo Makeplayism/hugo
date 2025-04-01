@@ -90,10 +90,10 @@ collections:
     label_singular: '文章'
     folder: 'content/posts'
     create: true
-    path: "{{fields.slug}}/index.md"
-    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
-    media_folder: '{{fields.slug}}'
-    public_folder: '/posts/{{fields.slug}}'
+    path: "{{slug}}/index.md"
+    #slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    media_folder: '{{slug}}'
+    public_folder: '/posts/{{slug}}'
     editor:
       preview: false
     fields:
@@ -123,9 +123,9 @@ collections:
     label_singular: 'Pages'
     folder: "content/pages"
     create: true
-    path: "{{fields.slug}}/index.md"
-    media_folder: '{{fields.slug}}'
-    public_folder: '/pages/{{fields.slug}}'
+    path: "{{slug}}/index.md"
+    media_folder: '{{slug}}'
+    public_folder: '/pages/{{slug}}'
     editor:
       preview: false
     fields:
@@ -155,19 +155,19 @@ collections:
     label_singular: 'Events'
     folder: "content/events"
     create: true
-    path: "{{slug}}/index.md" # 目录下的文件
+    path: "{{slug}}/index.md"
     media_folder: '{{slug}}'
     public_folder: '/events/{{slug}}'
     editor:
       preview: false
     fields:
-      #- *slug_field
+      - *slug_field
       - *title_field
       - *date_field
       - *draft_field
       - *description_field
-      #- *summary_field
-      #- *cover_field
+      - *summary_field
+      - *cover_field
       - *showauthor_field
       - *authors_field
       - *tags_field
@@ -187,9 +187,9 @@ collections:
     label_singular: 'Projects'
     folder: "content/projects"
     create: true
-    path: "{{fields.slug}}/index.md"
-    media_folder: '{{fields.slug}}'
-    public_folder: '/projects/{{fields.slug}}'
+    path: "{{slug}}/index.md"
+    media_folder: '{{slug}}'
+    public_folder: '/projects/{{slug}}'
     editor:
       preview: false
     fields:
@@ -219,9 +219,9 @@ collections:
     label_singular: 'Authors'
     folder: "content/authors"
     create: true
-    path: "{{fields.slug}}/index.md"
-    media_folder: '{{fields.slug}}'
-    public_folder: '/authors/{{fields.slug}}'
+    path: "{{slug}}/index.md"
+    media_folder: '{{slug}}'
+    public_folder: '/authors/{{slug}}'
     editor:
       preview: false
     fields:
