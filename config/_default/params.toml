@@ -94,6 +94,27 @@ favicon = "/img/favicon.ico"
   # 250401 ++for utteranc.es /layouts/_default/single.html
   showComments = true
 
+[giscus]         # giscus is a comment system based on GitHub Discussions. see https://giscus.app
+    enable = true
+    repo = "Makeplayism/comments"
+    repoId = "R_kgDOMOgCuQ"
+    category = "Sites Comment"
+    categoryId = "DIC_kwDOMOgCuc4CorA3"
+    # mapping = "pathname"  # comment value is the default value
+    # strict = 0
+    # reactionsEnabled = 1
+    # emitMetadata = 0
+    # inputPosition = "top"
+    # theme = "light"
+    mapping = "url"
+    reactionsEnabled = "1"
+    emitMetadata = "1"
+    inputPosition = "bottom"
+    theme = "light"
+    loading = "lazy"
+    lang = "zh-CN"
+    # lazyLoading = false
+
 [list]
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
