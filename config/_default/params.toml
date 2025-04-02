@@ -35,6 +35,7 @@ smartTOCHideUnfocusedChildren = false
 #forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 favicon = "/img/favicon.ico"
+showComments = true
 
 
 [header]
@@ -131,6 +132,7 @@ favicon = "/img/favicon.ico"
   cardView = true
   cardViewScreenWidth = true
   constrainItemsWidth = true
+  showComments = true
 
 [sitemap]
   #excludedKinds = ["taxonomy", "term"]
